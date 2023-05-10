@@ -1,0 +1,151 @@
+
+<div class="row" > 
+<img src="https://i.postimg.cc/9XqTQ1Ws/Screenshot-2023-04-30-003549.png" alt="">
+
+</div>
+<!-- <div class="row m-2 ">
+    <div class=" s col-md-12  ps-2 w-25"> 
+        <input (change)="search($event)" class="form-control w-50 border-0 " type="text" placeholder="Search product"><i class="fa-solid fa-magnifying-glass mt-3 ms-3"></i>
+
+    </div>
+ 
+</div>  -->
+
+
+<div class="fcontent">
+<div class="images mt-3">
+
+
+
+<img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+
+<img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="">
+
+<img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
+</div>
+<div class="labels">
+<label for="">Electronics</label>
+<label for="">Smartphones</label>
+<label for="">Appliances</label>
+</div>
+
+</div>
+<div class="carousels mt-2">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="https://m.media-amazon.com/images/I/51ovs76vmtL._SX3000_.jpg" class="d-block w-100" height="400px" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://m.media-amazon.com/images/I/61aURrton0L._SX3000_.jpg" class="d-block w-100" height="400px" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://m.media-amazon.com/images/I/61l4i7aoY2L._SX3000_.jpg" class="d-block w-100"  height="400px" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+</div>
+
+ 
+
+    <!-- <pre>{{heading}}</pre>
+<pre>
+    {{allContacts|json}}
+</pre> -->
+
+
+
+<div class="row m-2 ">
+  <div class=" s col-md-12  ps-2 w-25"> 
+      <input (change)="search($event)" class="form-control w-50 border-0 " type="text" placeholder="Search product"><i class="fa-solid fa-magnifying-glass mt-2 ms-3"></i>
+
+  </div>
+
+</div> 
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let product of   allproducts |filter:searchKey :'product_name'" >
+ 
+              <div class=" details  row border-0 m-3 text-center  ">
+                    <div class="col-md-12">
+                     
+                        <div class="card border-0 bg-light mb-3" style="width:100%;">
+                          <div class="row g-0">
+                            <div class="col-md-5">
+                              <img
+                              [src]="product.product_photoUrl"
+                               
+                                class="product-image"
+                             width="100%" height="100%"  />
+                            </div>
+                            <div class="col-md-7">
+                              <div class="card-body m-3">
+                                <h5 class="card-text">{{product.product_name}}</h5>
+                                <h5 class="card-text">
+                               Price:   &#8377;{{product.product_price}}
+                                </h5>
+                                <h5 class="card-text">
+                                Brand:  {{product.product_company}}
+                                </h5>
+                                  <h5 class="card-text">
+                                  Stock:  {{product.product_stock}}
+                                  </h5>
+                                    
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa fa-star checked"></i>
+                                <i class="fa-regular fa-star-half-stroke checked "></i>
+                                <i class="fa-regular fa-star checked"></i>
+                               
+                                <p class="card-text">
+                                  <small class="text-muted">{{product.product_description}}</small>
+                                </p>
+
+                                <div class="icons">
+                                  <a routerLink="/product/view/{{product.id}}" class="btn btn-white  text-dark "><i class="fa-solid fa-eye"></i></a>
+                                  <a routerLink="/product/update/{{product.id}}"  class=" btn btn-white text-dark ms-5"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  
+                                  <button  (click)="deleteProduct(product.id)" class="btn btn-white text-danger ms-5 "><i class="fa-sharp fa-solid fa-trash"></i></button>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      
+                        </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+       
+    </div>
+</div>
+

@@ -1,0 +1,42 @@
+/* .images{
+    display: flex;
+    justify-content: space-around;
+
+}
+.labels{
+    display: flex;
+    justify-content: space-around;
+}
+.s{
+    display: flex;
+margin-left: auto;
+}
+.fcontent{
+    background-color: rgba(54, 28, 75, 0.036);
+    box-shadow: 8px 1px 4px ;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+
+}
+.details{
+    background-color: rgba(54, 28, 75, 0.036);
+    box-shadow: 4px 1px 4px ;
+}
+.prod_details{
+    height: 300px;
+}
+.prod_details:hover{
+   
+        transform: scale(1.03);
+        transition: 2s;
+    } */
+    .divider:after,
+    .divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+    }
+ 

@@ -1,0 +1,61 @@
+{
+  "products": [
+    {
+      "id": "1000",
+      "product_name": "Iphone 13 ",
+      "product_price": "90,000",
+      "product_photoUrl": "https://www.dslr-zone.com/wp-content/uploads/2021/10/iphone-13-6.jpeg",
+      "product_number": "1",
+      "product_description": "15 cm (6.1-inch) Super Retina XDR display",
+      "product_company": "Apple",
+      "groupId": "1",
+      "product_stock": "16"
+    },
+    {
+      "id": "1001",
+      "product_name": " MacBook Air Laptop",
+      "product_price": "1,15,100",
+      "product_photoUrl": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._SX679_.jpg",
+      "product_number": "2",
+      "product_description": "Great quality and good performance",
+      "product_company": "Apple",
+      "groupId": "2",
+      "product_stock": "7"
+    },
+    {
+      "id": "1003",
+      "product_name": "Refrigerator",
+      "product_price": "73,499",
+      "product_photoUrl": "https://m.media-amazon.com/images/I/61DWNwqjPPL._SX679_.jpg",
+      "product_number": "3",
+      "product_description": "Warranty: 1 year on Product | 10 years on Compressor",
+      "product_company": "Panasonic",
+      "groupId": "3",
+      "product_stock": "5"
+    },
+    {
+      "id": "1004",
+      "product_name": "iQOO Neo 6 5G",
+      "product_price": "24,999",
+      "product_photoUrl": "https://m.media-amazon.com/images/I/71WS-0ITj7L._SX679_.jpg",
+      "product_stock": "4",
+      "product_description": "80W FlashCharge Technology with 4700mAh Battery",
+      "product_company": "iQOO",
+      "groupId": "1"
+    }
+  ],
+  "group": [
+    {
+      "id": "1",
+      "name": "Smartphone"
+    },
+    {
+      "id": "2",
+      "name": "Electronics"
+    },
+    {
+      "id": "3",
+      "name": "Appliances"
+    }
+  ]
+}

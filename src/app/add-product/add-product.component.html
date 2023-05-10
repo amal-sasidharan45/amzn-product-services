@@ -1,0 +1,52 @@
+
+
+
+  <section class="vh-100">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img [src]="product.product_photoUrl"
+            class="img-fluid" >
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 bg-light">
+          <form>
+          
+  
+       
+  
+          
+            <form class=" p-5 " >
+                <input [(ngModel)]="product.id" name="product id" type="text" placeholder="Enter product Id" class="form-control m-2 rounded-4">
+
+            <input  [(ngModel)]="product.product_name" name="product name" type="text" placeholder="Enter product Name" class="form-control m-2 rounded-4">
+            <input  [(ngModel)]="product.product_price" name="product type" type="text" placeholder="Enter product price" class="form-control m-2  rounded-4">
+            <input  [(ngModel)]="product.product_photoUrl" name="product url"type="text" placeholder="Enter product photoUrl" class="form-control m-2  rounded-4">
+            <input [(ngModel)]="product.product_stock" name="product number" type="text" placeholder="Enter product stock" class="form-control m-2  rounded-4">
+            <input [(ngModel)]="product.product_description" name="product description" type="text" placeholder="Enter product description" class="form-control m-2  rounded-4">
+
+            <input  [(ngModel)]="product.product_company" name="product company" type="text" placeholder="Enter product Companyname" class="form-control m-2  rounded-4">
+                <select [(ngModel)]="product.groupId" name="product Id" class="form-control m-2  rounded-4"  id="">
+                    <option value=" " >Select</option>
+                    <option value={{group.id}} *ngFor="let group of allgroups">{{group.name}}</option>
+                 
+                </select>
+                
+                <input (click)="addproduct()" type="button" value="Add-product" class="btn btn-dark m-3 text-warning">
+                <a routerLink="/" class="btn btn-danger m-3" style="float: right;">Close</a>
+            </form>
+         
+        
+  
+          
+           
+  
+       
+  
+         
+  
+          </form>
+        </div>
+      </div>
+    </div>
+   
+  </section>

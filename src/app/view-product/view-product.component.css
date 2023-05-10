@@ -1,0 +1,21 @@
+.footer{
+    padding-top: 100px;
+}
+.card-header{
+    letter-spacing: 10px;
+    font-size: 30px;
+}
+.card-text{
+    letter-spacing: 3px;
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.checked{
+    color: orange;
+}
